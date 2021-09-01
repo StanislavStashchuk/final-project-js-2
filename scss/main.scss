@@ -1,2 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300&display=swap');
-@import "./variales";
+@import "./variables";
+@import "./header";
+@import "./home";
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.app {
+width: 86%;
+height: 100%;
+margin: 0 auto;
+scroll-behavior: smooth;
+overflow-x: hidden;
+transition: all .4s ease-out;
+}
+
+section {
+    padding: 22px 5%;
+}
+
+@media (max-width:1061px) {
+    section {
+        padding: 20px;
+    }
+}
