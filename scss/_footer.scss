@@ -1,0 +1,57 @@
+.footer {
+    margin-top: 18px;
+    background: $bg;
+    padding: 20px;
+    width: 100%;
+
+    .footer-box-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 46px;
+
+        .box {
+            width: 90%;
+            margin-left: 20px;
+
+            h3 {
+                font-size: 33px;
+                padding: 18px 0;
+                color: $blackColor;
+            }
+            .box-ancor {
+                display: block;
+                padding: 12px 0;
+                font-size: 22px;
+                color: $lightColor;
+                text-decoration: none;
+                
+
+                &:hover {
+
+                    i {
+                        padding-right: 14px;
+                    }
+                }
+
+                i {
+                    padding-right: 8px;
+                    color: $mainColor;
+                    transition-duration: .5s;
+                }
+            }
+        }
+    }
+
+    .credit {
+        color: $blackColor;
+        text-align: center;
+        padding: 18px;
+        margin-top: 33px;
+        padding-top: 33px;
+        font-size: 20px;
+
+        span {
+            color: $mainColor;
+        }
+    }
+}

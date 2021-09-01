@@ -1,0 +1,105 @@
+@import "./mixins";
+@import "./variables";
+
+.contact-heading {
+    @include heading();
+
+    span {
+        @include headingSpan();
+    }
+}
+
+.icons-container {
+    @include container();
+
+    .icons {
+        padding: 34px;
+        text-align: center;
+        border: $border;
+        border-radius: 8px;
+        box-shadow: $boxShadow;
+
+        i {
+            height: 70px;
+            width: 70px;
+            line-height: 70px;
+            color: $mainColor;
+            background: $bg;
+            border-radius: 50%;
+            font-size: 33px;
+        }
+
+        h3 {
+            color: $blackColor;
+            padding: 18px 0;
+            font-size: 28px;
+        }
+
+        p {
+            color: $lightColor;
+            line-height: 1.8;
+            font-size: 18px;
+        }
+    }
+}
+
+.row {
+    margin-top: 38px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+
+    .map {
+        flex: 1 1 45rem;
+        width: 100%;
+        padding: 36px;
+        border: $border;
+        box-shadow: $boxShadow;
+        border-radius: 8px;
+    }
+
+    form {
+        flex: 1 1 45rem;
+        padding: 36px;
+        border: $border;
+        box-shadow: $boxShadow;
+        border-radius: 8px;
+
+        .box {
+            margin: 10px 0;
+            padding: 18px;
+            font-size: 22px;
+            color: $blackColor;
+            border-radius: 8px;
+            border: $border;
+            background: #f7f7f7;
+            text-transform: none;
+            width: 100%;
+
+            &:focus {
+                background: $bg;
+            }
+        }
+
+        .btn {
+            cursor: pointer;
+            font-size: 16px;
+            padding: 8px 12px;
+            border-radius: 4px;
+            color: $mainColor;
+            background-color: $bg;
+            text-decoration: none;
+            border: $border;
+
+            &:hover {
+                color: $whiteColor;
+                background-color: $mainColor;
+            }
+        }
+
+        textarea {
+            height: 180px;
+            resize: none;
+        }
+    }
+}

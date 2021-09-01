@@ -1,0 +1,96 @@
+.blog-heading {
+    @include heading();
+
+    span {
+        @include headingSpan();
+    }
+}
+
+.blog-box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(199px, 1fr));
+    gap: 46px;
+
+    .box {
+        text-align: center;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: $boxShadow;
+        border: $border;
+        
+        .content {
+            padding-top: 10px;
+
+            .icon {
+                padding: 16px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                a {
+                    font-size: 14px;
+                    color: $lightColor;
+
+                    &:hover {
+                        color: $mainColor
+                    }
+
+                    i {
+                        padding-right: 8px;
+                        color: $mainColor;
+                    }
+                }
+            }
+
+            h3 {
+                color: $blackColor;
+                font-size: 26px;
+            }
+
+            p {
+                color: $lightColor;
+                font-size: 18px;
+                line-height: 1.7;
+                padding: 16px 0;
+            }
+
+            .btn {
+                cursor: pointer;
+                font-size: 16px;
+                padding: 8px 12px;
+                border-radius: 4px;
+                color: $mainColor;
+                background-color: $bg;
+                text-decoration: none;
+
+                &:hover {
+                color: $whiteColor;
+                background-color: $mainColor;
+                }
+            }
+        }
+
+        &:hover {
+
+            .image {
+                
+                img {
+                    transform: scale(1.2);
+                    transition: all .4s ease-out;
+                }
+            }
+        }
+        .image {
+            height: 160px;
+            overflow: hidden;
+            border-radius: 3px;
+    
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+}
