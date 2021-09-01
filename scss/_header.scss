@@ -1,0 +1,116 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: $whiteColor;
+    box-shadow: $boxShadow;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    transition: all .4s ease-out;
+
+    .header-logo {
+        font-size: 25px;
+        color: $blackColor;
+        font-weight: bolder;
+        text-decoration: none;
+    }
+
+    .header-navbar {
+
+        .header-navbar__ancor {
+            font-size: 26px;
+            color: $lightColor;
+            margin-left: 25px;
+            text-decoration: none;
+
+            &:hover {
+                color: $mainColor;
+            }
+        }
+    }
+
+    #menu-btn {
+        cursor: pointer;
+        font-size: 20px;
+        padding: 10px 15px;
+        border-radius: 4px;
+        color: $mainColor;
+        background-color: $bg;
+        display: none;
+
+        &:hover {
+            color: $whiteColor;
+            background-color: $mainColor;
+        }
+    }
+}
+
+
+
+@media (max-width:1061px) {
+    .header {
+        padding: 20px;
+
+        .header-navbar {
+
+            .header-navbar__ancor {
+                font-size: 24px;
+            }
+        }
+    }    
+}
+
+@media (max-width:768px) {
+    .header {
+
+        .header-navbar {
+            position: absolute;
+            top: 115%;
+            right: 20px;
+            background: $whiteColor;
+            box-shadow: $boxShadow;
+            border: $border;
+            border-radius: 3px;
+            width: 240px;
+            transform: scale(0);
+            transform-origin: top right;
+            opacity: 0;
+
+            .header-navbar__ancor {
+                font-size: 20px;
+                display: block;
+                padding: 11px;
+                margin: 11px;
+
+                &:hover {
+                    background: $bg;
+                }
+            }
+        }
+
+        .active {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        #menu-btn {
+            display: initial;
+        }
+    }    
+}
+
+@media (max-width:450px) {
+    .header {
+
+        .header-navbar {
+
+            .header-navbar__ancor {
+                font-size: 18px;
+            }
+        }
+    }    
+}
