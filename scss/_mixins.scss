@@ -11,3 +11,9 @@
     background: $bg;
     padding: 0 15px;
 }
+
+@mixin container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(177px, 1fr));
+    gap: 46px;
+}

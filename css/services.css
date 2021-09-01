@@ -1,0 +1,67 @@
+.services-heading {
+  text-align: center;
+  padding-bottom: 38px;
+  font-size: 38px;
+  color: #464343;
+}
+
+.services-heading span {
+  color: #e8786e;
+  border-radius: 5px;
+  background: #fceae9;
+  padding: 0 15px;
+}
+
+.services-box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(177px, 1fr));
+  gap: 46px;
+}
+
+.services-box-container .box {
+  text-align: center;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 33px 14px;
+}
+
+.services-box-container .box .btn {
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  color: #e8786e;
+  background-color: #fceae9;
+  text-decoration: none;
+}
+
+.services-box-container .box .btn:hover {
+  color: #ffff;
+  background-color: #e8786e;
+}
+
+.services-box-container .box img {
+  height: 68px;
+  margin-bottom: 16px;
+  color: red;
+  height: 90px;
+}
+
+.services-box-container .box img:hover {
+  fill: red;
+}
+
+.services-box-container .box h3 {
+  color: #464343;
+  font-size: 30px;
+  padding: 1px;
+}
+
+.services-box-container .box p {
+  color: #777;
+  font-size: 22px;
+  padding: 36px 0;
+  line-height: 22px;
+}
+/*# sourceMappingURL=services.css.map */

@@ -1,0 +1,61 @@
+@import "./variables";
+@import "./mixins";
+
+.services-heading {
+    @include heading();
+
+    span {
+        @include headingSpan();
+    }
+}
+
+.services-box-container {
+    @include container();
+
+    .box {
+        text-align: center;
+        border: $border;
+        box-shadow: $boxShadow;
+        border-radius: 5px;
+        padding: 33px 14px;
+
+        .btn {
+            cursor: pointer;
+            font-size: 16px;
+            padding: 8px 12px;
+            border-radius: 4px;
+            color: $mainColor;
+            background-color: $bg;
+            text-decoration: none;
+
+            &:hover {
+                color: $whiteColor;
+                background-color: $mainColor;
+            }
+        }
+
+        img {
+            height: 68px;
+            margin-bottom: 16px;
+            color: red;
+            height: 90px;
+
+            &:hover {
+                fill: red;
+              }
+        }
+
+        h3 {
+            color: $blackColor;
+            font-size: 30px;
+            padding: 1px;
+        }
+
+        p {
+            color: $lightColor;
+            font-size: 22px;
+            padding: 36px 0;
+            line-height: 22px;
+        }        
+    }
+}
