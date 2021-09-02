@@ -219,6 +219,7 @@
   color: #e8786e;
   background-color: #fceae9;
   text-decoration: none;
+  border: 2px solid rgba(0, 0, 0, 0.1);
 }
 
 .services-box-container .box .btn:hover {
@@ -386,13 +387,17 @@
   opacity: 0;
 }
 
-.portfolio-box-container .box .content h3 {
+.portfolio-box-container .box .content .content-ancor {
+  text-decoration: none;
+}
+
+.portfolio-box-container .box .content .content-ancor h3 {
   font-size: 35px;
   padding-bottom: 15px;
   color: #464343;
 }
 
-.portfolio-box-container .box .content p {
+.portfolio-box-container .box .content .content-ancor p {
   font-size: 20px;
   color: #777;
 }
@@ -506,6 +511,7 @@
   color: #e8786e;
   background-color: #fceae9;
   text-decoration: none;
+  border: 2px solid rgba(0, 0, 0, 0.1);
 }
 
 .blog-box-container .box .content .btn:hover {
@@ -694,6 +700,12 @@
 
 .footer .credit span {
   color: #e8786e;
+}
+
+.mdf-app {
+  background-color: #fceae9;
+  height: 100%;
+  width: 100%;
 }
 
 * {
