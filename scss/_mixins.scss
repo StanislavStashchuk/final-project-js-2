@@ -17,3 +17,14 @@
     grid-template-columns: repeat(auto-fit, minmax(177px, 1fr));
     gap: 46px;
 }
+
+@mixin btn {
+    cursor: pointer;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    color: $mainColor;
+    background-color: $bg;
+    text-decoration: none;
+    border: $border;
+}

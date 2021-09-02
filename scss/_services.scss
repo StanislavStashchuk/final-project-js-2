@@ -20,13 +20,7 @@
         padding: 33px 14px;
 
         .btn {
-            cursor: pointer;
-            font-size: 16px;
-            padding: 8px 12px;
-            border-radius: 4px;
-            color: $mainColor;
-            background-color: $bg;
-            text-decoration: none;
+            @include btn();
 
             &:hover {
                 color: $whiteColor;

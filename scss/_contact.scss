@@ -82,14 +82,7 @@
         }
 
         .btn {
-            cursor: pointer;
-            font-size: 16px;
-            padding: 8px 12px;
-            border-radius: 4px;
-            color: $mainColor;
-            background-color: $bg;
-            text-decoration: none;
-            border: $border;
+            @include btn();
 
             &:hover {
                 color: $whiteColor;
