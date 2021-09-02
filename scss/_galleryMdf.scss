@@ -1,0 +1,47 @@
+.mdf-app {
+    width: 86%;
+    height: 100%;
+    margin: 0 auto;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    transition: all .4s ease-out;
+}
+
+.mdf-gallery__img {
+    max-width: 100%;
+    border: $border;
+    position: relative;
+    box-shadow: $boxShadow;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 250ms;
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 13px 13px rgba(0, 0, 0, 0.144);
+    }
+}
+
+#mdf-container__gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+}
+
+#mdf-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: 250ms transform;
+    padding: 40px;
+
+    #selectedImage {
+        max-height: 100%;
+    }
+}
