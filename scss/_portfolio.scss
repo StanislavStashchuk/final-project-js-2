@@ -31,17 +31,21 @@
             justify-content: center;
             text-align: center;
             opacity: 0;
-            
-            h3 {
-                font-size: 35px;
-                padding-bottom: 15px;
-                color: $blackColor;
-            }
-            
-            p {
-                font-size: 20px;
-                color: $lightColor;
-            }
+
+            .content-ancor {
+                text-decoration: none;
+                
+                h3 {
+                    font-size: 35px;
+                    padding-bottom: 15px;
+                    color: $blackColor;
+                }
+                
+                p {
+                    font-size: 20px;
+                    color: $lightColor;
+                }
+            }            
         }
         
         &:hover {
