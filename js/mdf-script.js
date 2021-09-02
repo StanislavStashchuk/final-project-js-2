@@ -13,8 +13,16 @@ imageIndexes.forEach((i) => {
 
     image.addEventListener('click' , () =>{
         popup.style.transform = `translateY(0)`;
+        popup.style.backgroundColor = `#fceae9`;
+        
         selectedImage.src = `/images/galleryMdf/mdf-${i}.png`;
     });
 
     gallery.appendChild(image);
+});
+
+popup.addEventListener('click', () =>{
+    popup.style.transform = `translateY(-100%)`;
+    popup.src = ' ';
+    popup.alt = ' ';
 });
